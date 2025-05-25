@@ -58,7 +58,7 @@ def write_to_csv(letter_counts):
         key=lambda x: russian_alphabet.index(x[0]) if x[0] in russian_alphabet else 999
     )
 
-    with open('beasts.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('../beasts.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         for letter, count in sorted_letters:
             writer.writerow([letter, count])

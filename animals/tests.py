@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import patch, mock_open, Mock, call
 from collections import defaultdict
-from main import get_animals_count, write_to_csv
+from animals.main import get_animals_count, write_to_csv
 
 @pytest.fixture
 def mock_wiki_response():
